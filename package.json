@@ -1,0 +1,24 @@
+{
+  "name": "qa_dojo_api_request",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dmytry-S/qa-dojo-api-request.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Dmytry-S/qa-dojo-api-request/issues"
+  },
+  "homepage": "https://github.com/Dmytry-S/qa-dojo-api-request#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^26.6.6",
+    "dotenv": "^18.0.10"
+  }
+}
