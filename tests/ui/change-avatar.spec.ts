@@ -4,7 +4,11 @@ test('Change avatar', async ({ page, registerUser }) => {
     const newAvatar = 'https://www.svgrepo.com/show/530661/genetic-data.svg';
 
     await page.goto(`/articles/profile/${registerUser.username}`);
+
     await page.getByText("Edit profile").click();
+
+    await expect(page.getByTestId("settings-username")).toHaveValue(registerUser.username);
+    await expect(page.getByTestId("settings-email")).toHaveValue(registerUser.email);
 
     await page.getByTestId("settings-image").fill(newAvatar);
     await page.getByTestId("settings-submit").click();

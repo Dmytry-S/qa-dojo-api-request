@@ -21,6 +21,7 @@ const test = base.extend<MyFixtures>({
 
     const json = await response.json();
     const token = json.user.token;
+    expect(token.trim().length, 'Is empty').toBeGreaterThan(0);
 
     await context.setStorageState({
         cookies: [],
