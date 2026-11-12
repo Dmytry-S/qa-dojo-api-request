@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Dmytry-S/qa-dojo-api-request#readme",
   "devDependencies": {
+    "@faker-js/faker": "^10.6.0",
     "@playwright/test": "^1.65.0",
     "@types/node": "^26.6.6",
     "dotenv": "^18.0.10"
